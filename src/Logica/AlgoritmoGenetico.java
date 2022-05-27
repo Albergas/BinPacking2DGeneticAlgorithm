@@ -5,8 +5,8 @@ import java.util.List;
 
 public class AlgoritmoGenetico {
 
-    private static final double ProbMutEscogidos = 0.0005;
-    private static final double ProbMutOrden = 0.0005;
+    private static final double ProbMutEscogidos = 0.005;
+    private static final double ProbMutOrden = 0.005;
     private static final double ProbMutModo = 0.05;
     private List<Generacion> generaciones;
     private Generacion generacionActual;

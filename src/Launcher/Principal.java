@@ -13,10 +13,18 @@ public class Principal {
 
     public static void main(String[] args){
 
-        Mochila mochila = new Mochila(10,10);
+        Mochila mochila = new Mochila(20,20);
         mochila.mostrar();
 
         Colocacion colocacion;
+
+        Item h1 = new Item(10,5);
+        Item h2 = new Item(10,1);
+        Item h3 = new Item(4,1);
+        Item h4 = new Item(2,3);
+        Item h5 = new Item(2,7);
+        Item h6 = new Item(1,2);
+        Item h7 = new Item(1,1);
 
         Item cuadrado = new Item(2,2);
         Item rectangulo = new Item(3,1);
@@ -62,6 +70,58 @@ public class Principal {
         Item p5 = new Item(2,2);
 
         List<Item> items = new ArrayList<Item>();
+
+        items.add(h1);
+        items.add(h2);
+        items.add(h3);
+        items.add(h3);
+        items.add(h3);
+        items.add(h4);
+        items.add(h5);
+        items.add(h6);
+        items.add(h6);
+        items.add(h6);
+        items.add(h7);
+        items.add(h7);
+
+        items.add(cuadrado);
+        items.add(rectangulo);
+        items.add(alma);
+        items.add(prim);
+        items.add(menuda);
+        items.add(paranoia);
+        items.add(i1);
+        items.add(i2);
+        items.add(i3);
+        items.add(i4);
+        items.add(i5);
+        items.add(i6);
+        items.add(i7);
+        items.add(i8);
+        items.add(i9);
+        items.add(j1);
+        items.add(j2);
+        items.add(j3);
+        items.add(j4);
+        items.add(j5);
+        items.add(j6);
+        items.add(j7);
+        items.add(j8);
+        items.add(j9);
+        items.add(k1);
+        items.add(k2);
+        items.add(k3);
+        items.add(k4);
+        items.add(k5);
+        items.add(k6);
+        items.add(k7);
+        items.add(k8);
+        items.add(k9);
+        items.add(p1);
+        items.add(p2);
+        items.add(p3);
+        items.add(p4);
+        items.add(p5);
 
         items.add(cuadrado);
         items.add(rectangulo);

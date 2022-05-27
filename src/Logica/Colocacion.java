@@ -71,11 +71,9 @@ public class Colocacion {
             }
         }
 
-
         for(int i = 0; i < cantidadItems; i++){
             this.escogidos[i] = 0;
         }
-
 
         List<Integer> numeros = new ArrayList<Integer>();
         for(int i = 0; i < cantidadItems; i++)
