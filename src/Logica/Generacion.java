@@ -64,18 +64,19 @@ public class Generacion {
         int cantidad = padre.getCantidadItems();
         int[] escogidos = new int[cantidad];
         int[] orden = new int[cantidad];
-        Random rn = new Random();
         char modo;
-        int corte = rn.nextInt(cantidad-1) + 1;
-
-        for(int i = 0; i < corte; i++){
-            escogidos[i] = padre.getEscogidos()[i];
-        }
-        for(int i = corte; i < cantidad; i++){
-            escogidos[i] = madre.getEscogidos()[i];
-        }
 
         double n = Math.random();
+
+        for(int i = 0; i < cantidad; i++){
+            n = Math.random();
+            if(n<0.5)
+                escogidos[i] = padre.getEscogidos()[i];
+            else
+                escogidos[i] = madre.getEscogidos()[i];
+        }
+
+        n = Math.random();
 
         if(n < 0.5){
             for(int i = 0; i < cantidad; i++){

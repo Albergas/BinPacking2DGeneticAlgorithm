@@ -13,7 +13,7 @@ public class Principal {
 
     public static void main(String[] args){
 
-        Mochila mochila = new Mochila(20,20);
+        Mochila mochila = new Mochila(15,15);
         mochila.mostrar();
 
         Colocacion colocacion;
@@ -163,7 +163,7 @@ public class Principal {
         items.add(p5);
 
         List<Colocacion> colocaciones = new ArrayList<Colocacion>();
-        for(int i = 0; i < 20; i++){
+        for(int i = 0; i < 10; i++){
             colocaciones.add(new Colocacion(mochila, items));
         }
 
