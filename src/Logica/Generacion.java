@@ -40,13 +40,20 @@ public class Generacion {
         return puntos;
     }
 
+    public int sumaPuntosMitadMejores(){
+        int puntos = 0;
+        for(Colocacion col : this.mitadMejores())
+            puntos += col.puntuacion();
+        return puntos;
+    }
+
     public Colocacion superviviente(){
         double prob = 0;
         double n = Math.random();
         int pos = 0;
 
         for(Colocacion col : this.mitadMejores()){
-            prob += (col.puntuacion()+0.0) / (this.sumaPuntos()+0.0);
+            prob += (col.puntuacion()+0.0) / (this.sumaPuntosMitadMejores()+0.0);
             if(n > prob)
                 pos++;
         }

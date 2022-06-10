@@ -13,7 +13,7 @@ public class Principal {
 
     public static void main(String[] args){
 
-        Mochila mochila = new Mochila(15,15);
+        Mochila mochila = new Mochila(10,10);
         mochila.mostrar();
 
         Colocacion colocacion;
@@ -25,13 +25,6 @@ public class Principal {
         Item h5 = new Item(2,7);
         Item h6 = new Item(1,2);
         Item h7 = new Item(1,1);
-
-        Item cuadrado = new Item(2,2);
-        Item rectangulo = new Item(3,1);
-        Item alma = new Item(2,4);
-        Item prim = new Item(1,1);
-        Item menuda = new Item(3,3);
-        Item paranoia = new Item(1,2);
 
         Item i1 = new Item(1,1);
         Item i2 = new Item(2,2);
@@ -84,12 +77,6 @@ public class Principal {
         items.add(h7);
         items.add(h7);
 
-        items.add(cuadrado);
-        items.add(rectangulo);
-        items.add(alma);
-        items.add(prim);
-        items.add(menuda);
-        items.add(paranoia);
         items.add(i1);
         items.add(i2);
         items.add(i3);
@@ -123,12 +110,6 @@ public class Principal {
         items.add(p4);
         items.add(p5);
 
-        items.add(cuadrado);
-        items.add(rectangulo);
-        items.add(alma);
-        items.add(prim);
-        items.add(menuda);
-        items.add(paranoia);
         items.add(i1);
         items.add(i2);
         items.add(i3);
@@ -161,9 +142,44 @@ public class Principal {
         items.add(p3);
         items.add(p4);
         items.add(p5);
+
+        items.add(k1);
+        items.add(k2);
+        items.add(k3);
+        items.add(k4);
+        items.add(k5);
+        items.add(k6);
+        items.add(k7);
+        items.add(k8);
+        items.add(k9);
+
+        items.add(p1);
+        items.add(p2);
+        items.add(p3);
+        items.add(p4);
+        items.add(p5);
+
+        items.add(p1);
+        items.add(p2);
+        items.add(p3);
+        items.add(p4);
+        items.add(p5);
+
+        items.add(p1);
+        items.add(p2);
+        items.add(p3);
+        items.add(p4);
+        items.add(p5);
+
+        items.add(p1);
+        items.add(p2);
+        items.add(p3);
+        items.add(p4);
+        items.add(p5);
+
 
         List<Colocacion> colocaciones = new ArrayList<Colocacion>();
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 15; i++){
             colocaciones.add(new Colocacion(mochila, items));
         }
 
